@@ -5,6 +5,7 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copy the app package and package-lock.json file
+# ./ copies the current directory (where the Dockerfile is located)
 COPY package*.json ./
 
 # Copy local directories to the current local directory of our docker image (/app)
